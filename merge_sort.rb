@@ -1,4 +1,5 @@
 module MergeSort
+  private
   def split_in_half (array, output_array=[])
     output_array[0] = array[0..(array.length/2)-1]
     output_array[1] = array[(array.length/2)..array.length-1]
@@ -30,7 +31,7 @@ module MergeSort
     end
     output_array
   end
-
+  public
   def merge_sort (array)
     if (array.length < 2)
       return array
