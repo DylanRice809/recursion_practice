@@ -44,6 +44,4 @@ module MergeSort
     output_array = merge(one, two)
     output_array
   end
-
-  p merge_sort([8,1,4,5,2,10,3,7,6,9])
 end
